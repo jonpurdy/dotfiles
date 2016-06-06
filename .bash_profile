@@ -10,6 +10,9 @@ alias ws='watson'
 # added 2016-04-14
 alias o='open ./'
 
+# added 2016-05-19
+alias g='sr google'
+
 # adding Jon's scripts to path
 export PATH="/Users/jonpurdy/Dropbox/KR_Projects/active_code/scripts:$PATH"
 
@@ -34,7 +37,8 @@ export PATH="/usr/local/sbin:$PATH"
 # modified with gtimeout 1 in case of lack of internet connection 2016-03-21
 # for new installation, "brew install coreutils"
 # ansiweather
-gtimeout 1 ansiweather
+# gtimeout 1 ansiweather
+# too much information, disabled
 
 # added 2016-03-09
 # https://github.com/mrzool/bash-sensible
