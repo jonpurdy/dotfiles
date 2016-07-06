@@ -22,7 +22,7 @@ export EDITOR=/usr/bin/nano
 # for creating virtualenvs using virtualenvwrapper
 alias mkv='mkvirtualenv --python=/usr/local/bin/python3'
 alias wo='workon'
-alias wol='ls -l ~/.virtualenvs'
+alias wol='ls -l ~/.virtualenvs | grep -v "virtualenv\|activate\|project\|initialize\|get_env"'
 
 # for setting terminal/tab name correctly after logging out of ssh
 # http://apple.stackexchange.com/questions/83659/terminal-tab-title-after-ssh-session
