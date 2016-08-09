@@ -23,6 +23,11 @@ export PATH="/Users/jonpurdy/Dropbox/KR_Projects/active_code/scripts:$PATH"
 # set the default editor to nano
 export EDITOR=/usr/bin/nano
 
+# for creating virtualenvs using virtualenvwrapper
+alias mkv='mkvirtualenv --python=/usr/local/bin/python3'
+alias wo='workon'
+alias wol='ls -l ~/.virtualenvs | grep -v "virtualenv\|activate\|project\|initialize\|get_env"'
+
 # for setting terminal/tab name correctly after logging out of ssh
 # http://apple.stackexchange.com/questions/83659/terminal-tab-title-after-ssh-session
 export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}\007"'
@@ -55,6 +60,7 @@ function title {
     echo -ne "\033]0;"$*"\007"
 }
 
-
+export WORKON_HOME=~/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
