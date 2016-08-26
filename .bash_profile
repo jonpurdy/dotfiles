@@ -1,5 +1,5 @@
 # makes default 'ls' useful
-alias ls='ls -lFh'
+alias ls='ls -Fh'
 
 # open in sublime text
 alias subl='open -a "Sublime Text"'
@@ -22,7 +22,7 @@ export EDITOR=/usr/bin/nano
 # for creating virtualenvs using virtualenvwrapper
 alias mkv='mkvirtualenv --python=/usr/local/bin/python3'
 alias wo='workon'
-alias wol='ls -l ~/.virtualenvs | grep -v "virtualenv\|activate\|project\|initialize\|get_env"'
+alias wol='ls ~/.virtualenvs | grep -v "virtualenv\|activate\|project\|initialize\|get_env"'
 
 # for setting terminal/tab name correctly after logging out of ssh
 # http://apple.stackexchange.com/questions/83659/terminal-tab-title-after-ssh-session
