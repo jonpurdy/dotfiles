@@ -13,6 +13,10 @@ alias o='open ./'
 # added 2016-05-19
 alias g='sr google'
 
+# added 2016-06-11
+#networksetup -setairportpower en0 off; networksetup -setairportpower en0 on
+alias networkreset='sudo route -n flush; sudo route -n flush; sudo route -n flush; sudo route-n flush; sudo ifconfig en0 down; sudo ifconfig en0 up; sudo ifconfig en1 down; sudo ifconfig en1 up'
+
 # adding Jon's scripts to path
 export PATH="/Users/jonpurdy/Dropbox/KR_Projects/active_code/scripts:$PATH"
 
