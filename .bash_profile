@@ -3,6 +3,7 @@ alias ls='ls -Fh'
 
 # open in sublime text
 alias subl='open -a "Sublime Text"'
+alias s='open -a "Sublime Text"'
 
 # added 2016-03-30
 alias ws='watson'
