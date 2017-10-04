@@ -21,14 +21,19 @@ alias v='vagrant'
 #networksetup -setairportpower en0 off; networksetup -setairportpower en0 on
 alias networkreset='sudo route -n flush; sudo route -n flush; sudo route -n flush; sudo route-n flush; sudo ifconfig en0 down; sudo ifconfig en0 up; sudo ifconfig en1 down; sudo ifconfig en1 up; sudo killall -HUP mDNSResponder'
 
+# added 2017-04-20
+alias doo='doctl compute droplet'
+
 # adding Jon's scripts to path
 export PATH="/Users/jonpurdy/Dropbox/KR_Projects/active_code/scripts:$PATH"
+export PATH="/Users/jonpurdy/bin:$PATH"
+
 
 # set the default editor to nano
 export EDITOR=/usr/bin/nano
 
 # for creating virtualenvs using virtualenvwrapper
-alias mkv='mkvirtualenv --python=/usr/local/bin/python3'
+alias mkv='mkvirtualenv --python=/usr/local/opt/python3/bin/python3'
 alias wo='workon'
 alias wol='ls ~/.virtualenvs | grep -v "virtualenv\|activate\|project\|initialize\|get_env"'
 
@@ -70,4 +75,11 @@ source /usr/local/bin/virtualenvwrapper.sh
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
 # added 2016-08-30
-export PATH=/usr/local/bin:$PATH
+#export PATH=/usr/local/bin:$PATH
+
+# added 2017-06-27
+# ensures that each command run gets written immediately
+#export PROMPT_COMMAND='history -a'
+#export PROMPT_COMMAND='echo "[$(date "+%Y-%m-%d %H:%M:%S")][$(pwd)] $(history 1)" >> ~/.bash_history.log'
+#export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
+#export PROMPT_COMMAND='if [ "$(id -u)" -ne 0 ]; then echo "$(date "+%Y-%m-%d.%H:%M:%S") $(pwd) $(history 1)" >> ~/.logs/bash-history-$(date "+%Y-%m-%d").log; fi'
