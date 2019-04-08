@@ -6,9 +6,10 @@ alias o='open ./'
 alias g='sr google'
 alias v='vagrant'
 alias networkreset='sudo route -n flush; sudo route -n flush; sudo route -n flush; sudo route-n flush; sudo ifconfig en0 down; sudo ifconfig en0 up; sudo ifconfig en1 down; sudo ifconfig en1 up; sudo killall -HUP mDNSResponder'
+alias ws='python -m SimpleHTTPServer'
+alias brewtree='brew deps --tree --installed'
 
 # adding Jon's scripts to path
-export PATH="/Users/jonpurdy/Dropbox/KR_Projects/active_code/scripts:$PATH"
 export PATH="/Users/jonpurdy/bin:$PATH"
 
 # set the default editor to nano
@@ -53,4 +54,5 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
+
 
