@@ -7,6 +7,9 @@ alias g='sr google'
 alias v='vagrant'
 alias networkreset='sudo route -n flush; sudo route -n flush; sudo route -n flush; sudo route-n flush; sudo ifconfig en0 down; sudo ifconfig en0 up; sudo ifconfig en1 down; sudo ifconfig en1 up; sudo killall -HUP mDNSResponder'
 alias ws='python -m SimpleHTTPServer'
+alias jpods='bluetoothconnector FC-1D-43-E6-8A-C9'
+alias tf='terraform'
+alias dnsk='sudo killall -HUP mDNSResponder'
 
 # https://blog.jpalardy.com/posts/untangling-your-homebrew-dependencies/
 # https://apple.stackexchange.com/a/322371
@@ -55,7 +58,14 @@ export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
+# Added 2019-08-08 for Jesse
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
+
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
+
+source ~/.secrets
 
