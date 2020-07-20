@@ -5,11 +5,16 @@ alias s='open -a "Sublime Text"'
 alias o='open ./'
 alias g='sr google'
 alias v='vagrant'
-alias networkreset='sudo route -n flush; sudo route -n flush; sudo route -n flush; sudo route-n flush; sudo ifconfig en0 down; sudo ifconfig en0 up; sudo ifconfig en1 down; sudo ifconfig en1 up; sudo killall -HUP mDNSResponder'
+alias dnsreset='sudo killall -HUP mDNSResponder'
+alias networkreset='sudo route -n flush; sudo route -n flush; sudo route -n flush; sudo route -n flush; sudo ifconfig en0 down; sudo ifconfig en0 up; sudo killall -HUP mDNSResponder'
 alias ws='python -m SimpleHTTPServer'
-alias jpods='bluetoothconnector FC-1D-43-E6-8A-C9'
+alias ws2='twistd -no web --path=.'
+alias jpods='bluetoothconnector 28-f0-33-a3-ce-fe'
 alias tf='terraform'
 alias dnsk='sudo killall -HUP mDNSResponder'
+alias updatedb='sudo /usr/libexec/locate.updatedb'
+alias weath='curl wttr.in'
+alias airport='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport'
 
 # https://blog.jpalardy.com/posts/untangling-your-homebrew-dependencies/
 # https://apple.stackexchange.com/a/322371
@@ -26,7 +31,7 @@ export EDITOR=/usr/bin/nano
 export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}\007"'
 
 # PS1 to make it beautiful
-export PS1="\w\n\[$(tput sgr0)\]\[\033[38;5;160m\]>\[$(tput sgr0)\]\[\033[38;5;11m\]>\[$(tput sgr0)\]\[\033[38;5;39m\]>\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
+export PS1="💻 ️\w\n\[$(tput sgr0)\]\[\033[38;5;160m\]>\[$(tput sgr0)\]\[\033[38;5;11m\]>\[$(tput sgr0)\]\[\033[38;5;39m\]>\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
 
 # prevents Python from spitting out .pyc files everywhere
 # https://docs.python.org/2/using/cmdline.html
