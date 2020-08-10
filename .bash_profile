@@ -1,5 +1,6 @@
 # Aliases
-alias ls='ls -Fh'
+#alias ls='ls -Fh'
+alias ls='ls -la'
 alias subl='open -a "Sublime Text"'
 alias s='open -a "Sublime Text"'
 alias o='open ./'
@@ -74,3 +75,5 @@ export LC_ALL=en_US.UTF-8
 
 source ~/.secrets
 
+# for generic colorizer
+source /usr/local/etc/grc.bashrc
