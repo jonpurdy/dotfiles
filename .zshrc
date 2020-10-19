@@ -16,6 +16,12 @@ alias dnsk='sudo killall -HUP mDNSResponder'
 alias updatedb='sudo /usr/libexec/locate.updatedb'
 alias weath='curl wttr.in'
 alias airport='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport'
+alias webcamv2='gst-launch-1.0 avfvideosrc -e device-index=2 ! video/x-raw,width=1920,height=1080 ! autovideosink'
+alias webcamv0='gst-launch-1.0 avfvideosrc -e device-index=0 ! video/x-raw,width=1920,height=1080 ! autovideosink'
+alias webcaml='ffmpeg -f avfoundation -list_devices true -i ""'
+alias ydl='youtube-dl'
+alias ydlb='youtube-dl -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4" '
+alias deq='xattr -d com.apple.quarantine '
 
 # https://blog.jpalardy.com/posts/untangling-your-homebrew-dependencies/
 # https://apple.stackexchange.com/a/322371
